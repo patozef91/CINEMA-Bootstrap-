@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='mobile-web-app-capable' content='yes'>
     <title>Bootstrap CINEMA</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
@@ -156,7 +157,52 @@
           <h2 class='text-center text-uppercase welcome-title'>¡te esperamos!</h2>
 
         </div>
-        <div class=" col-lg-6 col-md-6 col-sm-12 col-12 movies-row"></div>
+        <div class=" col-lg-6 col-md-6 col-sm-12 col-12 movies-row">
+          <form autocomplete="on" name="Formulario de datos básicos" role="form">
+            <fieldset>
+              <div class="form-group text-center">
+                <legend class="user_data">Datos Personales</legend>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" class="form-control input-element" >
+                <input type="email" name="email" id="email" placeholder="Correo Electrónico" class="form-control input-element" >
+
+                <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" class="form-control input-element">
+
+                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" class="form-control input-element" >
+              </div>
+
+              <div class="text-center">
+                <legend class="user_data">Elige tus categorías favoritas</legend>
+
+                <input type="checkbox" name="drama" id="drama" class="form-control user_data checkbox-inline">
+                <label for="drama" class="label-class">Drama</label>
+
+                <input type="checkbox" name="comedia" id="comedia" class="form-control user_data checkbox-inline">
+                <label for="comedia" class="label-class">Comedia</label>
+
+                <input type="checkbox" name="thriller" id="thriller" class="form-control user_data checkbox-inline">
+                <label for="thriller" class="label-class">Thriller</label>
+
+                <input type="checkbox" name="terror" id="terror" class="form-control user_data checkbox-inline">
+                <label for="terror" class="label-class">Terror</label>
+
+                <input type="checkbox" name="documental" id="docuemental" class="form-control user_data checkbox-inline">
+                <label for="docuemental" class="label-class">Documental</label>
+              </div>
+
+              <div class="text-center">
+                <legend class="user_data">¿Desea recibir correo de nuestro sitio?</legend>
+                <input type='radio' name='si' id='si' />
+                <label for='si' class='label-class'>Si</label>
+                <input type='radio' name='no' id='no' />
+                <label for='no' class='label-class'>No</label>
+              </div>
+
+              <div class='text-center'>
+                <button type='button' class='btn btn-primary btn-save form-control'>Guardar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </div>
   </body>
